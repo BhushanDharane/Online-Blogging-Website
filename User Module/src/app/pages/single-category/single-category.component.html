@@ -1,0 +1,18 @@
+<div class="bg-theme p-5">
+    <div class="container">
+        <h1 class="text-white"> {{ categoryObj.category}}</h1>
+        <p class="text-white">A programming language is a formalized set of instructions used to produce computer programs. It provides a way for humans to communicate with computers by specifying a series of steps or algorithms that the computer should follow to perform a particular task or solve a problem. Programming languages enable developers to write code that is then translated into machine-readable instructions that a computer's central processing unit (CPU) can execute. 
+        </p>
+    </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-4 mb-3" *ngFor="let post of postsArray">
+                <app-post-card [postData]="post"></app-post-card>
+            </div>
+           
+           
+        </div>
+    </div>
+
